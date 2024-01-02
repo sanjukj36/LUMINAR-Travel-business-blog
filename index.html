@@ -15,7 +15,7 @@
 
 <body>
   <!-- <div  class="container"> -->
-    <!-- <nav>
+  <!-- <nav>
       <div class="nav-logo">
           <img class="logo"
           src="./logo-removebg-preview.png"
@@ -49,86 +49,116 @@
         </ul>
       </div>
     </nav> -->
-    <nav>
-        <div class="nav-logo">
-          <img class="logo"
-          src="./logo-removebg-preview.png"
-          alt="">  
-      </div>
-    
-      <ul class="nav justify-content-end mb-5">
-        <li><a class="links" href="#home">Home</a></li>
-  
-          <li class="nav-item dropdown mb-5">
-            <a class="nav-link dropdown-toggle text-body-emphasis" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false" style="color: white; font-size: 10px;">
-              <span style="color: white;
-              font-weight: 600;">packages</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Home</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+  <nav>
+    <div class="nav-logo">
+      <img class="logo" src="./logo-removebg-preview.png" alt="">
+    </div>
+
+    <ul class="nav justify-content-end mb-5">
+      <li><a class="links" href="#home">Home</a></li>
+
+      <li class="nav-item dropdown mb-3" id="dropdown">
+        <a class="nav-link dropdown-toggle text-body-emphasis" href="#" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <span>packages</span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Home</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li>
+            <hr class="dropdown-divider">
           </li>
-          <li><a class="links" href="#cart">Transport</a></li>
-          <li><a class="links" href="#gallery">Hotels</a></li>
-          <li><a class="links" href="#home">Blog</a></li>
-          <li><a class="links" href="#home">Support</a></li>
-      </ul>
-    </nav>
-    <section>
-      <div id="for_space">
-        <div class="bg_img">
-          <img class="bg_img" src="./bg-PhotoRoom.jpg" class="img-fluid " alt="Responsive image">
-          <!-- Button trigger modal -->
-          <div class="bg-button">
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              ENQUIRY
-            </button>
-          </div>
-  
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Please share your details...</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-  
-                  <ul class="list-group">
-                    <li class="list-group-item">Name</li>
-                    <li class="list-group-item">Email</li>
-                    <li class="list-group-item">Phone Number</li>
-                    <li class="list-group-item">Your preference </li>
-                    <li class="list-group-item">Number of members</li>
-                    <li class="list-group-item">
-                      <label for="exampleFormControlTextarea1">Message</label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </li>
-  
-                  </ul>
-                </div>
-                <div class="footer-enquery">
-                  <button type="button" class="btn m-1" style="background-color: blueviolet;">Submit</button>
-                  <!-- <button type="button" class="btn btn-success">Purchase</button> -->
-                </div>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </li>
+      <li><a class="links" href="#cart">Transport</a></li>
+      <li><a class="links" href="#gallery">Hotels</a></li>
+      <li><a class="links" href="#home">Blog</a></li>
+      <li><a class="links" href="#home">Support</a></li>
+    </ul>
+  </nav>
+  <section>
+    <div id="for_space">
+      <div class="bg_img">
+        <img class="bg_img" src="./bg-PhotoRoom.jpg" class="img-fluid " alt="Responsive image">
+        <!-- Button trigger modal -->
+        <div class="bg-button">
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            ENQUIRY
+          </button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Please share your details...</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <div class="mb-3 row">
+                      <label for="inputPassword" class="col-sm-2 col-form-label">Name</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputPassword">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="mb-3 row">
+                      <label for="inputPassword" class="col-sm-2 col-form-label">Email</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputPassword">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="mb-3 row">
+                      <label for="inputPassword" class="col col-form-label ">Phone Number</label>
+                      <div class="col-sm-8">
+                        <input type="tel" class="form-control" id="inputPassword">
+                      </div>
+                    </div></li>
+                  <li class="list-group-item">
+                    <div class="mb-3 row">
+                      <label for="inputPassword" class="col col-form-label">Your preference</label>
+                      <div class="col-sm-8">
+                        <input type="text" class="form-control" id="inputPassword">
+                      </div>
+                    </div></li>
+                  <li class="list-group-item">
+                    <div class="mb-3 row">
+                      <label for="inputPassword" class="col col-form-label">Number of members</label>
+                      <div class="col-sm-8">
+                        <input type="number" minlength="1" maxlength="1000" class="form-control" id="inputPassword">
+                      </div>
+                    </div></li>
+                  <li class="list-group-item">
+                    <label for="exampleFormControlTextarea1">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </li>
+
+                </ul>
+              </div>
+              <div class="footer-enquery">
+                <button type="button" class="btn m-1" style="background-color: blueviolet;">Submit</button>
+                <!-- <button type="button" class="btn btn-success">Purchase</button> -->
               </div>
             </div>
           </div>
-  
         </div>
+
       </div>
-    </section>
-    <section >
-      <div>
-        <h1 class="m-4 text-center" class="display-3">HONEYMOON PACKAGES</h1>
-      </div>
+    </div>
+  </section>
+  <section>
+    <div>
+      <h1 class="m-4 text-center" class="display-3">HONEYMOON PACKAGES</h1>
+    </div>
+    <div class="container">
       <div class="row row-cols-1 row-cols-md-4 g-4">
         <div class="col">
           <div class="card h-100 border-dark mb-3">
@@ -203,330 +233,339 @@
         </div>
   
       </div>
-      <div class="m-4 text-center">
-        <button class="button button5">MORE PACKAGES</button>
-  
-      </div>
-  
-  
-    </section>
-    <section>
-      <div>
-        <h1 class="m-4 text-center" class="display-3">SPECIAL KERALA FESTIVAL TOURS</h1>
-      </div>
-      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img style="height: 436px;" src="./Kerala_boatrace1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class='caros_h'>KERALA BOAT RACE</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-  
-              <BUtton class="btn btn-primary" style="background-color: rgb(68, 175, 229);">More Details</BUtton>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img style="height: 436px;" src="./kadhakali.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class='caros_h'>KADAHKALI</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-              <BUtton class="btn btn-primary" style="background-color: rgb(68, 175, 229);">More Details</BUtton>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img style="height: 436px;" src="./THRISSUR POORAM.webp" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class='caros_h'>THRISSUR POORAM</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-              <BUtton class="btn btn-primary" style="background-color: rgb(68, 175, 229);">More Details</BUtton>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-  
-    </section>
-    <section>
-      <div class="container m-5">
-        <div>
-          <div class="row">
-            <div class="col-sm">
-              <iframe width="560" height="200" src="https://www.youtube.com/embed/yLE5bDX7M3Y?si=XKW-A6_hCYFiXFZf"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            </div>
-            <div class="col-sm">
-              <div class="row">
-                <div class="col-sm mt-1">
-                  <div class="mt-1">
-                    <img class="img-fluid" src="./download (1).jpeg" alt="">
-                  </div>
-                  <div class="mt-1">
-                    <img class="img-fluid" src="./Athirapally-Falls.webp" alt="">
-                  </div>
-                  <div class="mt-1">
-                    <img class="img-fluid" src="./Thekkady1.webp" alt="">
-                  </div>
-                </div>
-                <div class="col-sm">
-                  <div class="mt-1">
-                    <img class="img-fluid" src="./Theyyam.webp" alt="">
-                  </div>
-                  <div class="mt-1">
-                    <img class="img-fluid" src="./kuchipudi.jpg" alt="">
-                  </div>
-                </div>
-                <div class="col-sm mt-1">
-                  <div class="mt-1">
-                    <img class="img-fluid" src="./Varkala-Beach.webp" alt="">
-                  </div>
-                  <div class="mt-1">
-                    <img class="img-fluid" src="./klari.webp" alt="">
-                  </div>
-                  <div class="mt-1">
-                    <img class="img-fluid" src="./elephant.webp" alt="">
-                  </div>
-  
-                </div>
-              </div>
-            </div>
-  
-          </div>
-        </div>
-      </div>
-    </section>
-  
-    <section>
-      <div>
-        <h1 class="m-4 text-center" class="display-3">NORTH INDIAN TOURS</h1>
-      </div>
-      <div class="container">
+    </div>
+    <div class="m-4 text-center">
+      <button class="button button5">MORE PACKAGES</button>
 
+    </div>
+
+
+  </section>
+  <section>
+    <div>
+      <h1 class="m-4 text-center" class="display-3">SPECIAL KERALA FESTIVAL TOURS</h1>
+    </div>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img style="height: 436px;" src="./Kerala_boatrace1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class='caros_h'>KERALA BOAT RACE</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+
+            <BUtton class="btn btn-primary" style="background-color: rgb(68, 175, 229);">More Details</BUtton>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img style="height: 436px;" src="./kadhakali.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class='caros_h'>KADAHKALI</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+            <BUtton class="btn btn-primary" style="background-color: rgb(68, 175, 229);">More Details</BUtton>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img style="height: 436px;" src="./THRISSUR POORAM.webp" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class='caros_h'>THRISSUR POORAM</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+            <BUtton class="btn btn-primary" style="background-color: rgb(68, 175, 229);">More Details</BUtton>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </section>
+  <section>
+    <div class="container m-5">
+      <div>
         <div class="row">
+          <div class="col-sm">
+            <iframe width="560" height="200" src="https://www.youtube.com/embed/yLE5bDX7M3Y?si=XKW-A6_hCYFiXFZf"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="col-sm">
+            <div class="row">
+              <div class="col-sm mt-1">
+                <div class="mt-1">
+                  <img class="img-fluid" src="./download (1).jpeg" alt="">
+                </div>
+                <div class="mt-1">
+                  <img class="img-fluid" src="./Athirapally-Falls.webp" alt="">
+                </div>
+                <div class="mt-1">
+                  <img class="img-fluid" src="./Thekkady1.webp" alt="">
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="mt-1">
+                  <img class="img-fluid" src="./Theyyam.webp" alt="">
+                </div>
+                <div class="mt-1">
+                  <img class="img-fluid" src="./kuchipudi.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-sm mt-1">
+                <div class="mt-1">
+                  <img class="img-fluid" src="./Varkala-Beach.webp" alt="">
+                </div>
+                <div class="mt-1">
+                  <img class="img-fluid" src="./klari.webp" alt="">
+                </div>
+                <div class="mt-1">
+                  <img class="img-fluid" src="./elephant.webp" alt="">
+                </div>
 
-          <div class="col">
-            <div class="space">
-              <div class="imgSpace">
-                <img class="no_img " src="./no1.jpeg" alt="...">
-                <div class="overlay">
-                  <h3 class="mt-5">Taj Mahal</h3>
-                  <p>Rs: <span>18800/person</span></p>
-                  <div class="m-4 text-center">
-                    <button class="button m-2">BOOK NOW</button>
-  
-                  </div>
-                </div>
               </div>
             </div>
           </div>
 
-          <div class="col">
-            <div class="space">
-              <div class="imgSpace">
-                <img class="no_img" src="./no2.jpeg" alt="...">
-                <div class="overlay">
-                  <h3 class="mt-5">India Gate</h3>
-                  <p>Rs: <span>18800/person</span></p>
-                  <button class="button">BOOK NOW</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="space">
-              <div class="imgSpace">
-                <img class="no_img" src="./no3.jpeg" alt="...">
-                <div class="overlay">
-                  <h3 class="mt-5">Kashmir</h3>
-                  <p>Rs: <span>18800/person</span></p>
-                  <button class="button">BOOK NOW</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="space">
-              <div class="imgSpace">
-                <img class="no_img" src="./no4.jpeg" alt="...">
-                <div class="overlay">
-                  <h3 class="mt-5">Shimla</h3>
-                  <p>Rs: <span>20000/person</span></p>
-                  <button class="button">BOOK NOW</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div>
+      <h1 class="m-4 text-center" class="display-3">NORTH INDIAN TOURS</h1>
+    </div>
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col">
+          <div class="space">
+            <div class="imgSpace our_price_ronde1">
+              <img class="no_img " src="./no1.jpeg" alt="...">
+              <div class="overlay">
+                <h3 class="mt-5">Taj Mahal</h3>
+                <p>Rs: <span>18800/person</span></p>
+                <div class="m-4 text-center">
+                  <button class="button m-2">BOOK NOW</button>
+
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <hr class="mb-3 mt-5">
-      </div>
-    </section>
-    <section>
-      <div>
-        <h1 class="m-4 text-center" class="display-3">OUR PREMIUM FEATURES</h1>
-        <P class="m-2 text-center">We will make your dreams come true</P>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            <div class="or_space text-center">
-              <img src="./pr1.jpeg" alt="Avatar" style="width:200px;height: 200px; border-radius: 50%;">
-              <h3>FREE BIKE RIDE</h3>
-              <a href="">Learn More</a>
-            </div>
-  
-          </div>
-          <div class="col-sm">
-            <div class="or_space text-center">
-              <img src="./pr2.jpeg" alt="Avatar" style="width:200px;height: 200px; border-radius: 50%;">
-              <h3>CAMPFIRE</h3>
-              <a href="">Learn More</a>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="or_space text-center">
-              <img src="./pr3.jpeg" alt="Avatar" style="width:200px;height: 200px; border-radius: 50%;">
-              <h3>24X7 SUPPORT</h3>
-              <a href="">Learn More</a>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="or_space text-center">
-              <img src="./pr4.jpeg" alt="Avatar" style="width:200px;height: 200px; border-radius: 50%;">
-              <h3>TOUR GUIDE</h3>
-              <a href="">Learn More</a>
+        <div class="col">
+          <div class="space">
+            <div class="imgSpace our_price_ronde1">
+              <img class="no_img" src="./no2.jpeg" alt="...">
+              <div class="overlay">
+                <h3 class="mt-5">India Gate</h3>
+                <p>Rs: <span>18800/person</span></p>
+                <button class="button">BOOK NOW</button>
+              </div>
             </div>
           </div>
         </div>
-        <hr class="mb-3 mt-3">
-      </div>
-    </section>
-    <section style="background-color: aliceblue;">
-      <div>
-        <!-- <h1 class="m-4 text-center" class="display-3">OUR PREMIUM FEATURES</h1> -->
-        <img width="5%" id="cuple_logo" src="https://previews.123rf.com/images/aldanna/aldanna1606/aldanna160600004/60465837-email-love-cartoon-love-letter-icon-vector-with-heart-on-the-wings-isolated-on-a-white-background.jpg" alt="">
-        <P class="m-2 text-center">Our customer love</P>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col text-center">
-            <img class="cup_img" src="./couple3.jpeg" alt="">
-            <div *ngFor="let rating of data">
-              <ngb-rating [rate]="rating" [max]=4>
-                <ng-template let-fill="fill">
-                  <span class="star color-green" [class.filled]="fill === 100">&#9733;</span>
-                  <span class="star color-green" [class.filled]="fill === 100">&#9733;</span>
-                  <span class="star color-green" [class.filled]="fill === 100">&#9733;</span>
-                  <span class="star color-green" [class.filled]="fill === 100">&#9733;</span>
-                  <span class="star color{{}}" [class.filled]="fill === 100">&#9733;</span>
-                </ng-template>
-              </ngb-rating>
+        <div class="col">
+          <div class="space">
+            <div class="imgSpace our_price_ronde1">
+              <img class="no_img" src="./no3.jpeg" alt="...">
+              <div class="overlay">
+                <h3 class="mt-5">Kashmir</h3>
+                <p>Rs: <span>18800/person</span></p>
+                <button class="button">BOOK NOW</button>
+              </div>
             </div>
-            <h3>Michael & jenny</h3>
-            <p>
-              "Lorem ipsum dolor, sit amet consectetur architecto! Error id amet
-              mnis pariatur cumque, autem fugit."
-            </p>
           </div>
-          <div class="col text-center">
-            <img class="cup_img" src="./couple.webp" alt="">
-            <div *ngFor="let rating of data">
-              <ngb-rating [rate]="rating" [max]=4>
-                <ng-template let-fill="fill">
-                  <span class="star color-green" [class.filled]="fill === 100">&#9733;</span>
-                  <span class="star color-green" [class.filled]="fill === 100">&#9733;</span>
-                  <span class="star color-green" [class.filled]="fill === 100">&#9733;</span>
-                  <span class="star color-green" [class.filled]="fill === 100">&#9733;</span>
-                  <span class="star color{{}}" [class.filled]="fill === 100">&#9733;</span>
-                </ng-template>
-              </ngb-rating>
+        </div>
+        <div class="col">
+          <div class="space ">
+            <div class="imgSpace our_price_ronde1">
+              <img class="no_img" src="./no4.jpeg" alt="...">
+              <div class="overlay">
+                <h3 class="mt-5">Shimla</h3>
+                <p>Rs: <span>20000/person</span></p>
+                <button class="button">BOOK NOW</button>
+              </div>
             </div>
-            <h3>Rohith & Amrutha</h3>
-            <p>
-              "Lorem ipsum dolor, sit amet consectetur architecto! Error id amet
-              mnis pariatur cumque, autem fugit."
-            </p>
-          </div>
-          <div class="col text-center">
-            <img class="cup_img" src="./cup3.jpg" alt="">
-            <div *ngFor="let rating of data">
-              <ngb-rating [rate]="rating" [max]=4>
-                <ng-template let-fill="fill">
-                  <span class="star color-green" [class.filled]="fill === 100">&#9733;</span>
-                  <span class="star color-green" [class.filled]="fill === 100">&#9733;</span>
-                  <span class="star color-green" [class.filled]="fill === 100">&#9733;</span>
-                  <span class="star color{{}}" [class.filled]="fill === 100">&#9733;</span>
-                  <span class="star color{{}}" [class.filled]="fill === 100">&#9733;</span>
-                </ng-template>
-              </ngb-rating>
-            </div>
-            <h3>James & Anna</h3>
-            <p>
-              "Lorem ipsum dolor, sit amet consectetur architecto! Error id amet
-              mnis pariatur cumque, autem fugit."
-            </p>
           </div>
         </div>
       </div>
-    </section>
-    <footer style="background-color: rgba(14, 7, 63, 0.961);">
-      <div class="container text-center" >
-        <div class="row">
-          <div class="col">
-            <h3 class="footer_heading m-3" >ABOUT US</h3>
-            <ul class="list-group list-group-flush">
-              <li class="footer_subheading m-1">Our Company</li>
-              <li class="footer_subheading m-1">Our Management</li>
-              <li class="footer_subheading m-1">Connections</li>
-              <li class="footer_subheading m-1">Annual Report</li>
-              <li class="footer_subheading m-1">Our Network</li>
-            </ul>
+
+      <hr class="mb-3 mt-5">
+    </div>
+  </section>
+  <section>
+    <div>
+      <h1 class="m-4 text-center" class="display-3">OUR PREMIUM FEATURES</h1>
+      <P class="m-2 text-center">We will make your dreams come true</P>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="or_space text-center our_price_ronde">
+            <img src="./pr1.jpeg" alt="Avatar" style="width:200px;height: 200px; border-radius: 50%;">
+            <h3>FREE BIKE RIDE</h3>
+            <a href="">Learn More</a>
           </div>
-          <div class="col">
-            <div class="codent-Reacus">
-              <h3 class="footer_heading m-3" >ASOCIAL MEDIA</h3>
-              <div class="icon-collections m-3">
-                <div class="icon m-3">
-                  <a href="https://github.com/sanjukj36" target="_blank" style="font-size: 34px;"><i class="brand fa-brands fa-facebook"></i></a>
-                </div>
-                <div class="icon">
-                  <a href="https://github.com/sanjukj36" target="_blank" style="font-size: 34px;"><i class="brand fa-brands fa-instagram"></i></a>
-                </div>
-                <div class="icon">
-                    <a href="https://github.com/sanjukj36" target="_blank" style="font-size: 34px;"><i class="brand fa-brands fa-twitter"></i></a>
-                </div>
-                
-                <div class="icon">
-                    <a href="mailto:sanjukjoseph@gmail.com" target="_blank" style="font-size: 34px;"><i class="brand fa-brands fa-whatsapp"></i></a>
-                </div>
-            </div>
-            </div>
+
+        </div>
+        <div class="col-sm">
+          <div class="or_space text-center our_price_ronde">
+            <img src="./pr2.jpeg" alt="Avatar" style="width:200px;height: 200px; border-radius: 50%;">
+            <h3>CAMPFIRE</h3>
+            <a href="">Learn More</a>
           </div>
-          <div class="col">
-            <img  class="footer-img mt-3" src="./logo-removebg-preview.png"
-              alt="">
+        </div>
+        <div class="col-sm">
+          <div class="or_space text-center our_price_ronde">
+            <img src="./pr3.jpeg" alt="Avatar" style="width:200px;height: 200px; border-radius: 50%;">
+            <h3>24X7 SUPPORT</h3>
+            <a href="">Learn More</a>
+          </div>
+        </div>
+        <div class="col-sm"> 
+          <div class="or_space text-center our_price_ronde">
+            <img src="./pr4.jpeg" alt="Avatar" style="width:200px;height: 200px; border-radius: 50%;">
+            <h3>TOUR GUIDE</h3>
+            <a href="">Learn More</a>
           </div>
         </div>
       </div>
-  
-  
-    </footer>
+      <hr class="mb-3 mt-3">
+    </div>
+  </section>
+  <section style="background-color: aliceblue;">
+    <div>
+      <!-- <h1 class="m-4 text-center" class="display-3">OUR PREMIUM FEATURES</h1> -->
+      <img width="5%" id="cuple_logo"
+        src="https://previews.123rf.com/images/aldanna/aldanna1606/aldanna160600004/60465837-email-love-cartoon-love-letter-icon-vector-with-heart-on-the-wings-isolated-on-a-white-background.jpg"
+        alt="">
+      <P class="m-2 text-center">Our customer love</P>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <img class="cup_img" src="./couple3.jpeg" alt="">
+          <div *ngFor="let rating of data">
+            <ngb-rating [rate]="rating" [max]=4>
+              <ng-template let-fill="fill">
+                <span class="star color-green" [class.filled]="fill === 100">&#9733;</span>
+                <span class="star color-green" [class.filled]="fill === 100">&#9733;</span>
+                <span class="star color-green" [class.filled]="fill === 100">&#9733;</span>
+                <span class="star color-green" [class.filled]="fill === 100">&#9733;</span>
+                <span class="star color{{}}" [class.filled]="fill === 100">&#9733;</span>
+              </ng-template>
+            </ngb-rating>
+          </div>
+          <h3>Michael & jenny</h3>
+          <p>
+            "Lorem ipsum dolor, sit amet consectetur architecto! Error id amet
+            mnis pariatur cumque, autem fugit."
+          </p>
+        </div>
+        <div class="col text-center">
+          <img class="cup_img" src="./couple.webp" alt="">
+          <div *ngFor="let rating of data">
+            <ngb-rating [rate]="rating" [max]=4>
+              <ng-template let-fill="fill">
+                <span class="star color-green" [class.filled]="fill === 100">&#9733;</span>
+                <span class="star color-green" [class.filled]="fill === 100">&#9733;</span>
+                <span class="star color-green" [class.filled]="fill === 100">&#9733;</span>
+                <span class="star color-green" [class.filled]="fill === 100">&#9733;</span>
+                <span class="star color{{}}" [class.filled]="fill === 100">&#9733;</span>
+              </ng-template>
+            </ngb-rating>
+          </div>
+          <h3>Rohith & Amrutha</h3>
+          <p>
+            "Lorem ipsum dolor, sit amet consectetur architecto! Error id amet
+            mnis pariatur cumque, autem fugit."
+          </p>
+        </div>
+        <div class="col text-center">
+          <img class="cup_img" src="./cup3.jpg" alt="">
+          <div *ngFor="let rating of data">
+            <ngb-rating [rate]="rating" [max]=4>
+              <ng-template let-fill="fill">
+                <span class="star color-green" [class.filled]="fill === 100">&#9733;</span>
+                <span class="star color-green" [class.filled]="fill === 100">&#9733;</span>
+                <span class="star color-green" [class.filled]="fill === 100">&#9733;</span>
+                <span class="star color{{}}" [class.filled]="fill === 100">&#9733;</span>
+                <span class="star color{{}}" [class.filled]="fill === 100">&#9733;</span>
+              </ng-template>
+            </ngb-rating>
+          </div>
+          <h3>James & Anna</h3>
+          <p>
+            "Lorem ipsum dolor, sit amet consectetur architecto! Error id amet
+            mnis pariatur cumque, autem fugit."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer style="background-color: rgba(14, 7, 63, 0.961);">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <h3 class="footer_heading m-3">ABOUT US</h3>
+          <ul class="list-group list-group-flush">
+            <li class="footer_subheading m-1">Our Company</li>
+            <li class="footer_subheading m-1">Our Management</li>
+            <li class="footer_subheading m-1">Connections</li>
+            <li class="footer_subheading m-1">Annual Report</li>
+            <li class="footer_subheading m-1">Our Network</li>
+          </ul>
+        </div>
+        <div class="col">
+          <div class="codent-Reacus">
+            <h3 class="footer_heading m-3">ASOCIAL MEDIA</h3>
+            <div class="icon-collections m-3">
+              <div class="icon m-3">
+                <a href="https://github.com/sanjukj36" target="_blank" style="font-size: 34px;"><i
+                    class="brand fa-brands fa-facebook"></i></a>
+              </div>
+              <div class="icon">
+                <a href="https://github.com/sanjukj36" target="_blank" style="font-size: 34px;"><i
+                    class="brand fa-brands fa-instagram"></i></a>
+              </div>
+              <div class="icon">
+                <a href="https://github.com/sanjukj36" target="_blank" style="font-size: 34px;"><i
+                    class="brand fa-brands fa-twitter"></i></a>
+              </div>
+
+              <div class="icon">
+                <a href="mailto:sanjukjoseph@gmail.com" target="_blank" style="font-size: 34px;"><i
+                    class="brand fa-brands fa-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col our_price_ronde">
+          <img class="footer-img mt-3" src="./logo-removebg-preview.png" alt="">
+        </div>
+      </div>
+    </div>
+    
+
+
+  </footer>
   <!-- </div> -->
 </body>
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
